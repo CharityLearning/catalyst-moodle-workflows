@@ -84,7 +84,7 @@ runs:
         # Install dependencies
         echo "::group::Install dependencies"
 
-        ${{ inputs.extra_plugin_runners }} | sed "s/clcclc/hi/g"
+        ${{ inputs.extra_plugin_runners | sed "s/clcclc/hi/g" }}
 
         echo "::endgroup::"
       shell: bash
