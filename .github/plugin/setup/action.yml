@@ -84,7 +84,7 @@ runs:
         # Install dependencies
         echo "::group::Install dependencies"
 
-        ${{ inputs.extra_plugin_runners }} | sed 's/clcclc/${{secrets.GIT_READONLY_REPO_TOKEN}}/g'
+        ${{ inputs.extra_plugin_runners }} | sed "s/clcclc/${{secrets.GIT_READONLY_REPO_TOKEN}}/g"
 
         echo "::endgroup::"
       shell: bash
