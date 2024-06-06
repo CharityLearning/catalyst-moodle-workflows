@@ -63,6 +63,8 @@ on:
     secrets:
       moodle_org_token:
         required: false
+      GIT_READONLY_REPO_TOKEN:
+        required: false
 
 jobs:
   pre_job:
